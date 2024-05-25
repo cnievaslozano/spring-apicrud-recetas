@@ -35,7 +35,7 @@ Crud sencillo sobre recetas de cocina, en springboot.
     }
 ````
 
-- Actualizar receta [POST]:
+- Actualizar receta [PUT]:
 ````
     /api/v1/recetas
             

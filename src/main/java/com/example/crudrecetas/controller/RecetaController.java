@@ -27,9 +27,15 @@ public class RecetaController {
         return recetaService.getReceta(recetaId);
     }
 
-    // CREATE OR UPDATE
+    // CREATE
     @PostMapping
-    public void saveUpdate(@RequestBody Receta receta){
+    public void save(@RequestBody Receta receta){
+        recetaService.saveOrUpdate(receta);
+    }
+
+    // UPDATE
+    @PutMapping
+    public void update(@RequestBody Receta receta){
         recetaService.saveOrUpdate(receta);
     }
 
